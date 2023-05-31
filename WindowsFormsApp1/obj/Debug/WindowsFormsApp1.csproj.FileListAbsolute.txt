@@ -1,0 +1,10 @@
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Users\User\Downloads\test\roblox-optimizer\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
