@@ -1,4 +1,4 @@
-# Roblox Client Optimizer
+# Roblox Optimizer
 
 ## How it works?
 this program copies the settings file into roblox client's folder
