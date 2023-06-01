@@ -34,6 +34,16 @@ namespace WindowsFormsApp1
             {
                 string mainDirPath = System.Environment.GetEnvironmentVariable("USERPROFILE") + "\\AppData\\Local\\Roblox\\Versions"; ;
                 DirectoryInfo mainDir = new DirectoryInfo(mainDirPath);
+                if (mainDir.Exists)
+                {
+                    Console.WriteLine("roblox was found");
+                    label2.Text = "Roblox was found. Finding ClientSettings...";
+                } else
+                {
+                    label2.Text = "Roblox isn't installed";
+                    return;
+                }
+
                 DirectoryInfo[] subDirs = mainDir.GetDirectories();
                 DateTime lastCreated = DateTime.MinValue;
                 DirectoryInfo lastCreatedDir = null;
@@ -106,6 +116,17 @@ namespace WindowsFormsApp1
                 DirectoryInfo[] subDirs = mainDir.GetDirectories();
                 DateTime lastCreated = DateTime.MinValue;
                 DirectoryInfo lastCreatedDir = null;
+
+                if (mainDir.Exists)
+                {
+                    Console.WriteLine("roblox was found");
+                    label2.Text = "Roblox was found. Finding ClientSettings...";
+                }
+                else
+                {
+                    label2.Text = "Roblox isn't installed. Everything is OK";
+                    return;
+                }
 
                 label2.Text = "Finding the last version folder...";
 
