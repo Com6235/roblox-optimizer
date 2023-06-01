@@ -32,19 +32,19 @@ namespace WindowsFormsApp1
         {
             if (enableOptimizer == true)
             {
-                string mainDirPath = System.Environment.GetEnvironmentVariable("USERPROFILE") + "\\AppData\\Local\\Roblox\\Versions"; ;
-                DirectoryInfo mainDir = new DirectoryInfo(mainDirPath);
-                if (mainDir.Exists)
+                string mainDirPath = System.Environment.GetEnvironmentVariable("USERPROFILE") + "\\AppData\\Local\\Roblox\\Versions";
+                DirectoryInfo mainDir;
+                DirectoryInfo[] subDirs;
+                try
                 {
-                    Console.WriteLine("roblox was found");
-                    label2.Text = "Roblox was found. Finding ClientSettings...";
-                } else
-                {
+                    mainDir = new DirectoryInfo(mainDirPath);
+                    subDirs = mainDir.GetDirectories();
+                }
+                catch (DirectoryNotFoundException) {
                     label2.Text = "Roblox isn't installed";
                     return;
                 }
 
-                DirectoryInfo[] subDirs = mainDir.GetDirectories();
                 DateTime lastCreated = DateTime.MinValue;
                 DirectoryInfo lastCreatedDir = null;
 
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
                     // Console.WriteLine(subDirsOfLastCreatedDir.Count);
                 }
 
-                if (subDirsOfLastCreatedDir.Contains("ClientSettings")) 
+                if (subDirsOfLastCreatedDir.Contains("ClientSettings"))
                 {
                     label2.Text = "ClientSettings was found! Checking for the file...";
 
@@ -97,7 +97,8 @@ namespace WindowsFormsApp1
                         Console.WriteLine("File was created!");
                         stream.Close();
                     }
-                } else
+                }
+                else
                 {
                     label2.Text = "ClientSettings wasn\'t found! Creating it...";
                     Console.WriteLine("ClientSettings wasn\'t found! Creating it...");
@@ -109,24 +110,25 @@ namespace WindowsFormsApp1
                     stream.Close();
                 }
             }
-            else 
+            else
             {
-                string mainDirPath = System.Environment.GetEnvironmentVariable("USERPROFILE") + "\\AppData\\Local\\Roblox\\Versions"; ;
-                DirectoryInfo mainDir = new DirectoryInfo(mainDirPath);
-                DirectoryInfo[] subDirs = mainDir.GetDirectories();
-                DateTime lastCreated = DateTime.MinValue;
-                DirectoryInfo lastCreatedDir = null;
+                string mainDirPath = System.Environment.GetEnvironmentVariable("USERPROFILE") + "\\AppData\\Local\\Roblox\\Versions";
+                DirectoryInfo mainDir;
+                DirectoryInfo[] subDirs;
 
-                if (mainDir.Exists)
+                try
                 {
-                    Console.WriteLine("roblox was found");
-                    label2.Text = "Roblox was found. Finding ClientSettings...";
+                    mainDir = new DirectoryInfo(mainDirPath);
+                    subDirs = mainDir.GetDirectories();
                 }
-                else
+                catch (DirectoryNotFoundException)
                 {
-                    label2.Text = "Roblox isn't installed. Everything is OK";
+                    label2.Text = "Roblox isn't installed! Everything is OK.";
                     return;
                 }
+                
+                DateTime lastCreated = DateTime.MinValue;
+                DirectoryInfo lastCreatedDir = null;
 
                 label2.Text = "Finding the last version folder...";
 
@@ -164,6 +166,74 @@ namespace WindowsFormsApp1
                     Console.WriteLine("ClientSettings wasn\'t found! Creating it...");
                 }
             };
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string mainDirPath = System.Environment.GetEnvironmentVariable("USERPROFILE") + "\\AppData\\Local\\Roblox\\Versions";
+            DirectoryInfo mainDir;
+            DirectoryInfo[] subDirs;
+
+            try
+            {
+                mainDir = new DirectoryInfo(mainDirPath);
+                subDirs = mainDir.GetDirectories();
+            }
+            catch (DirectoryNotFoundException)
+            {
+                //label2.Text = "Roblox isn't installed.";
+                return;
+            }
+
+            DateTime lastCreated = DateTime.MinValue;
+            DirectoryInfo lastCreatedDir = null;
+
+            //label2.Text = "Finding the last version folder...";
+
+            foreach (DirectoryInfo subDir in subDirs)
+            {
+                if (subDir.CreationTime > lastCreated)
+                {
+                    lastCreated = subDir.CreationTime;
+                    lastCreatedDir = subDir;
+                }
+            }
+
+            if (lastCreatedDir != null)
+            {
+                Console.WriteLine("Last created directory: " + lastCreatedDir.FullName);
+            }
+
+            List<string> subDirsOfLastCreatedDir = new List<string>();
+            foreach (System.IO.DirectoryInfo dir in lastCreatedDir.EnumerateDirectories())
+            {
+                subDirsOfLastCreatedDir.Add(dir.Name);
+                // Console.WriteLine(subDirsOfLastCreatedDir.Count);
+            }
+
+            if (subDirsOfLastCreatedDir.Contains("ClientSettings"))
+            {
+                //label2.Text = "ClientSettings was found! Checking for the file...";
+
+                Console.WriteLine("ClientSettings was found! Checking for the file...");
+                List<string> yops = new List<string>();
+                foreach (string yop in System.IO.Directory.EnumerateFiles(lastCreatedDir.FullName + "\\ClientSettings"))
+                {
+                    yops.Add(yop);
+                    Console.WriteLine(yop);
+                }
+                if (yops.Contains(lastCreatedDir.FullName + "\\ClientSettings\\" + "ClientAppSettings.json"))
+                {
+                    //label2.Text = "Already optimized!";
+                    Console.WriteLine("Already optimized!");
+                    checkBox1.Checked = true;
+                    enableOptimizer = true;
+                } else
+                {
+                    checkBox1.Checked = false;
+                    enableOptimizer = false;
+                }
+            }
         }
     }
 };
