@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             label2.Text = "";
             checkBox1.Text = Strings.enableOptimizer;
+            button1.Text = Strings.apply;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

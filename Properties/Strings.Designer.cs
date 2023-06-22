@@ -70,6 +70,15 @@ namespace MainApp.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Apply.
+        /// </summary>
+        internal static string apply {
+            get {
+                return ResourceManager.GetString("apply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на ClientSettings wasn&apos;t found! Creating it....
         /// </summary>
         internal static string creatingDir {

@@ -120,6 +120,9 @@
   <data name="alreadyOptimized" xml:space="preserve">
     <value>Уже оптимизировано!</value>
   </data>
+  <data name="apply" xml:space="preserve">
+    <value>Установить</value>
+  </data>
   <data name="creatingDir" xml:space="preserve">
     <value>Папка ClientSettings не найдена! Создаём её...</value>
   </data>

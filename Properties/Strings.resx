@@ -120,6 +120,9 @@
   <data name="alreadyOptimized" xml:space="preserve">
     <value>Already optimized!</value>
   </data>
+  <data name="apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
   <data name="creatingDir" xml:space="preserve">
     <value>ClientSettings wasn't found! Creating it...</value>
   </data>
