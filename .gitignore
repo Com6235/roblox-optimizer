@@ -7,3 +7,7 @@
 /.vs
 
 *.user
+
+/Setup/Release
+
+/Setup/Debug

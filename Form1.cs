@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MainApp.Properties;
 
 namespace WindowsFormsApp1
 {
@@ -15,12 +16,13 @@ namespace WindowsFormsApp1
     {
         public bool enableOptimizer = false;
 
-        public string settings = System.IO.File.ReadAllText("settings.json");
+        public string settings = File.ReadAllText("settings.json");
 
         public Form1()
         {
             InitializeComponent();
             label2.Text = "";
+            checkBox1.Text = Strings.enableOptimizer;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -41,14 +43,14 @@ namespace WindowsFormsApp1
                     subDirs = mainDir.GetDirectories();
                 }
                 catch (DirectoryNotFoundException) {
-                    label2.Text = "Roblox isn't installed";
+                    label2.Text = Strings.notInstalled;
                     return;
                 }
 
                 DateTime lastCreated = DateTime.MinValue;
                 DirectoryInfo lastCreatedDir = null;
 
-                label2.Text = "Finding the last version folder...";
+                label2.Text = Strings.findingDir;
 
                 foreach (DirectoryInfo subDir in subDirs)
                 {
@@ -73,7 +75,7 @@ namespace WindowsFormsApp1
 
                 if (subDirsOfLastCreatedDir.Contains("ClientSettings"))
                 {
-                    label2.Text = "ClientSettings was found! Checking for the file...";
+                    label2.Text = Strings.settingsWasFound;
 
                     Console.WriteLine("ClientSettings was found! Checking for the file...");
                     List<string> yops = new List<string>();
@@ -84,28 +86,28 @@ namespace WindowsFormsApp1
                     }
                     if (yops.Contains(lastCreatedDir.FullName + "\\ClientSettings\\" + "ClientAppSettings.json"))
                     {
-                        label2.Text = "Already optimized!";
+                        label2.Text = Strings.alreadyOptimized;
                         Console.WriteLine("Already optimized!");
                     }
                     else
                     {
-                        label2.Text = "Creating the file...";
+                        label2.Text = Strings.creatingFile;
                         Console.WriteLine("Creating the file...");
                         var stream = System.IO.File.CreateText(lastCreatedDir.FullName + "\\ClientSettings\\" + "ClientAppSettings.json");
                         stream.Write(settings);
-                        label2.Text = "File was created!";
+                        label2.Text = Strings.fileWasCreated;
                         Console.WriteLine("File was created!");
                         stream.Close();
                     }
                 }
                 else
                 {
-                    label2.Text = "ClientSettings wasn\'t found! Creating it...";
+                    label2.Text = Strings.creatingDir;
                     Console.WriteLine("ClientSettings wasn\'t found! Creating it...");
                     System.IO.Directory.CreateDirectory(lastCreatedDir.FullName + "\\ClientSettings");
                     var stream = System.IO.File.CreateText(lastCreatedDir.FullName + "\\ClientSettings\\" + "ClientAppSettings.json");
                     stream.Write(settings);
-                    label2.Text = "File was created!";
+                    label2.Text = Strings.fileWasCreated;
                     Console.WriteLine("File was created!");
                     stream.Close();
                 }
@@ -123,14 +125,14 @@ namespace WindowsFormsApp1
                 }
                 catch (DirectoryNotFoundException)
                 {
-                    label2.Text = "Roblox isn't installed! Everything is OK.";
+                    label2.Text = Strings.notInstalled;
                     return;
                 }
                 
                 DateTime lastCreated = DateTime.MinValue;
                 DirectoryInfo lastCreatedDir = null;
 
-                label2.Text = "Finding the last version folder...";
+                label2.Text = Strings.findingDir;
 
                 foreach (DirectoryInfo subDir in subDirs)
                 {
@@ -155,14 +157,14 @@ namespace WindowsFormsApp1
 
                 if (subDirsOfLastCreatedDir.Contains("ClientSettings"))
                 {
-                    label2.Text = "ClientSettings was found! Deleting...";
+                    label2.Text = Strings.deletingDir;
                     Console.WriteLine("Deleting...");
                     System.IO.Directory.Delete(lastCreatedDir.FullName + "\\ClientSettings", true);
-                    label2.Text = "Deleted!";
+                    label2.Text = Strings.deletedDir;
                 }
                 else
                 {
-                    label2.Text = "ClientSettings wasn\'t found! Everything is OK.";
+                    label2.Text = Strings.everythingIsOK;
                     Console.WriteLine("ClientSettings wasn\'t found! Creating it...");
                 }
             };

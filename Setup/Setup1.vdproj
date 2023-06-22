@@ -21,13 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_180D87524E6142B2A2257B93A41DD811"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C3FFAE561F1D4A479151396398253BA6"
+        "MsmKey" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -47,6 +41,12 @@
         {
         "MsmKey" = "8:_EC62C786D251C2290CDE0C373DCE96D3"
         "OwnerKey" = "8:_11318EC3E19D48A7B267F49A5CDA79F4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FD4AB897A85448F8B4C1E65EEE168BE5"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -162,10 +162,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_180D87524E6142B2A2257B93A41DD811"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
             {
             "SourcePath" = "8:iconka.jpg"
-            "TargetName" = "8:banner.jpg"
+            "TargetName" = "8:iconka.jpg"
             "Tag" = "8:"
             "Folder" = "8:_17FD1461D3E841FA9EA1840C3E7775D5"
             "Condition" = "8:"
@@ -176,27 +176,7 @@
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:2"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C3FFAE561F1D4A479151396398253BA6"
-            {
-            "SourcePath" = "8:iconka.ico"
-            "TargetName" = "8:iconka.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_17FD1461D3E841FA9EA1840C3E7775D5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:2"
+            "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
             "IsDependency" = "11:FALSE"
@@ -284,6 +264,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FD4AB897A85448F8B4C1E65EEE168BE5"
+            {
+            "SourcePath" = "8:..\\iconka1.ico"
+            "TargetName" = "8:iconka1.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_17FD1461D3E841FA9EA1840C3E7775D5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -340,15 +340,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Roblox Optimizer"
-        "ProductCode" = "8:{C1A8CCA1-E590-4878-BF02-EBD05A21510E}"
-        "PackageCode" = "8:{394B4806-1398-400F-851B-E6168F992E6F}"
+        "ProductCode" = "8:{DFB9A1A4-864B-4912-AEDE-2A033A105BB2}"
+        "PackageCode" = "8:{FD149E57-69AE-4A90-B686-E91DB956AF48}"
         "UpgradeCode" = "8:{C45C6C9A-1FC6-4522-A1B5-F2567C424C6A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.3.0"
         "Manufacturer" = "8:Com6235"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -358,7 +358,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Roblox Optimizer"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_C3FFAE561F1D4A479151396398253BA6"
+        "ARPPRODUCTICON" = "8:_FD4AB897A85448F8B4C1E65EEE168BE5"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -472,7 +472,7 @@
             "Target" = "8:_11318EC3E19D48A7B267F49A5CDA79F4"
             "Folder" = "8:_7B59B50B463D459087954316C340D63B"
             "WorkingFolder" = "8:_17FD1461D3E841FA9EA1840C3E7775D5"
-            "Icon" = "8:_C3FFAE561F1D4A479151396398253BA6"
+            "Icon" = "8:_FD4AB897A85448F8B4C1E65EEE168BE5"
             "Feature" = "8:"
             }
         }
@@ -502,7 +502,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -547,7 +548,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -570,7 +571,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -593,7 +594,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -657,7 +658,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -702,7 +703,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -747,7 +748,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -779,7 +780,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -802,7 +803,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -851,7 +852,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_180D87524E6142B2A2257B93A41DD811"
+                            "Value" = "8:_7CBF13CB8E9A4874A0CF3E17E8DB8CAB"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -863,7 +864,7 @@
                             "ContextData" = "8:1;True=1;False=0"
                             "Attributes" = "3:0"
                             "Setting" = "3:0"
-                            "Value" = "3:1"
+                            "Value" = "3:0"
                             "DefaultValue" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }

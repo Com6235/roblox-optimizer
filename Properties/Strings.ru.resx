@@ -117,64 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="alreadyOptimized" xml:space="preserve">
+    <value>Уже оптимизировано!</value>
+  </data>
+  <data name="creatingDir" xml:space="preserve">
+    <value>Папка ClientSettings не найдена! Создаём её...</value>
+  </data>
+  <data name="creatingFile" xml:space="preserve">
+    <value>Файл создаётся...</value>
+  </data>
+  <data name="deletedDir" xml:space="preserve">
+    <value>Удалено!</value>
+  </data>
+  <data name="deletingDir" xml:space="preserve">
+    <value>Папка ClientSettings была найдена! Удаляем...</value>
+  </data>
+  <data name="enableOptimizer" xml:space="preserve">
+    <value>Включить оптимизацию</value>
+  </data>
+  <data name="everythingIsOK" xml:space="preserve">
+    <value>Папка ClientSettings не найдена! Всё хорошо!</value>
+  </data>
+  <data name="exception" xml:space="preserve">
+    <value>Ошибка!</value>
+  </data>
+  <data name="fileWasCreated" xml:space="preserve">
+    <value>Оптимизировано!</value>
+  </data>
+  <data name="findingDir" xml:space="preserve">
+    <value>Ищем папку с последней версией...</value>
+  </data>
+  <data name="notInstalled" xml:space="preserve">
+    <value>Roblox не установлен</value>
+  </data>
+  <data name="settingsWasFound" xml:space="preserve">
+    <value>Папка ClientSettings была найдена! Ищу файл...</value>
   </data>
 </root>
