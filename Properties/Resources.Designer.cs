@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MainApp.Properties {
+namespace WpfApp1.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MainApp.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MainApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WpfApp1.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,28 @@ namespace MainApp.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на {
+        ///  &quot;DFIntTaskSchedulerTargetFps&quot;: 9999,
+        ///  &quot;FFlagHandleAltEnterFullscreenManually&quot;: false,
+        ///  &quot;FFlagReportFpsAndGfxQualityPercentiles&quot;: false,
+        ///  &quot;FFlagEnableQuickGameLaunch&quot;: true,
+        ///  &quot;FFlagGraphicsDeviceEvents&quot;: true,
+        ///  &quot;FFlagGraphicsTextureCopy&quot;: true,
+        ///  &quot;FFlagFixGraphicsQuality&quot;: true,
+        ///  &quot;FFlagCommitToGraphicsQualityFix&quot;: true,
+        ///  &quot;DFFlagPlayerConfigurer2886&quot;: true,
+        ///  &quot;FFlagPlayerConfigurer2759&quot;: true,
+        ///  &quot;FFlagEnableInGameMenuV3&quot;: true,
+        ///  &quot;FFlagRenderPerformanceOverlay&quot;: true,
+        ///}.
+        /// </summary>
+        internal static string settings {
+            get {
+                return ResourceManager.GetString("settings", resourceCulture);
             }
         }
     }

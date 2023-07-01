@@ -1,0 +1,15 @@
+﻿<Window x:Name="Window1" x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Roblox Optimizer" Height="323.536" Width="327.869" Loaded="Window1_Loaded" ResizeMode="CanMinimize" Closed="Window1_Closed">
+    <Grid>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="278"/>
+        <CheckBox x:Name="checkbox1" Content="Enable Optimizer" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.916,-4.646" Height="21" Width="293" Checked="checkBox1_CheckedChanged" Unchecked="checkBox1_CheckedChanged"/>
+        <Button x:Name="button1" Content="Apply" HorizontalAlignment="Left" Margin="200,240,0,0" VerticalAlignment="Top" Width="103" Height="34" RenderTransformOrigin="-0.274,-1.046" Click="button1_Click"/>
+        <Button x:Name="aboutButton" Content="About" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="92" Click="aboutButton_Click"/>
+    </Grid>
+</Window>

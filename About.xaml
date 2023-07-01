@@ -1,0 +1,20 @@
+﻿<Window x:Name="aboutWindow" x:Class="WpfApp1.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="About" Height="276.822" Width="299.143" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Image Height="32" Margin="72,20,72,0" VerticalAlignment="Top" Source="iconka1.ico" Stretch="None" Grid.Column="1" RenderTransformOrigin="0.864,1.375"/>
+        <Label Content="Roblox Optimizer" Grid.Column="1" Margin="63,57,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Height="31"/>
+        <TextBlock x:Name="aboutText" Grid.Column="1" Margin="25,88,25,0" TextWrapping="Wrap" Text="A program, that optimizes roblox. Nothing special. Made with love by Com6235. Thanks to L8X for original settings file!" VerticalAlignment="Top" Height="150"/>
+
+    </Grid>
+</Window>

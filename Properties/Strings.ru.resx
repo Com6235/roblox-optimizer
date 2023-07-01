@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="about" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="aboutText" xml:space="preserve">
+    <value>Программа, оптимизирующая Roblox. Ничего особенного. Сделана с любовью. Спасибо L8X за оригинальный файл настроек!</value>
+  </data>
   <data name="alreadyOptimized" xml:space="preserve">
     <value>Уже оптимизировано!</value>
   </data>
   <data name="apply" xml:space="preserve">
-    <value>Установить</value>
+    <value>Применить</value>
   </data>
   <data name="creatingDir" xml:space="preserve">
     <value>Папка ClientSettings не найдена! Создаём её...</value>
