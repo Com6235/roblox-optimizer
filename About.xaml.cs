@@ -20,10 +20,45 @@ namespace WpfApp1
     /// </summary>
     public partial class About : Window
     {
+        private static int CLcounter;
+
         public About()
         {
             InitializeComponent();
             aboutText.Text = Strings.aboutText;
+        }
+
+        private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            CLcounter++;
+            switch (CLcounter)
+            {
+                case 1:
+                    aboutText.Text = "";
+                    label.Content = "I";
+                    break;
+                case 2:
+                    label.Content = "IT";
+                    break;
+                case 3:
+                    label.Content = "IT\'";
+                    break;
+                case 4:
+                    label.Content = "IT\'S";
+                    break;
+                case 5:
+                    label.Content = "IT\'S ";
+                    break;
+                case 6:
+                    label.Content = "IT\'S M";
+                    break;
+                case 7:
+                    label.Content = "IT\'S ME";
+                    break;
+                case 8:
+                    aboutWindow.Close();
+                    break;
+            }
         }
     }
 }

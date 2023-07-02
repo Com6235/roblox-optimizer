@@ -12,8 +12,8 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Image Height="32" Margin="72,20,72,0" VerticalAlignment="Top" Source="iconka1.ico" Stretch="None" Grid.Column="1" RenderTransformOrigin="0.864,1.375"/>
-        <Label Content="Roblox Optimizer" Grid.Column="1" Margin="63,57,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Height="31"/>
+        <Image Height="32" Margin="72,20,72,0" VerticalAlignment="Top" Source="iconka1.ico" Stretch="None" Grid.Column="1" RenderTransformOrigin="0.864,1.375" MouseLeftButtonUp="Image_MouseLeftButtonUp"/>
+        <Label x:Name="label" Content="Roblox Optimizer" Grid.Column="1" Margin="63,57,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Height="31"/>
         <TextBlock x:Name="aboutText" Grid.Column="1" Margin="25,88,25,0" TextWrapping="Wrap" Text="A program, that optimizes roblox. Nothing special. Made with love by Com6235. Thanks to L8X for original settings file!" VerticalAlignment="Top" Height="150"/>
 
     </Grid>
