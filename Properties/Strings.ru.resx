@@ -145,7 +145,7 @@
     <value>Включить оптимизацию</value>
   </data>
   <data name="everythingIsOK" xml:space="preserve">
-    <value>Папка ClientSettings не найдена! Всё хорошо!</value>
+    <value>Папка ClientSettings не найдена! Всё хорошо.</value>
   </data>
   <data name="exception" xml:space="preserve">
     <value>Ошибка!</value>

@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\SplashScreen.scale-200.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\LockScreenLogo.scale-200.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\Square150x150Logo.scale-200.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\Square44x44Logo.scale-200.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\StoreLogo.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\Images\Wide310x150Logo.scale-200.png
+C:\Users\User\source\repos\roblox-optimizer\Setup\bin\AnyCPU\Release\resources.pri
+C:\Users\User\source\repos\roblox-optimizer\obj\Release\ru\Roblox Optimizer.resources.dll
+C:\Users\User\source\repos\roblox-optimizer\bin\Release\Roblox Optimizer.exe
+C:\Users\User\source\repos\roblox-optimizer\bin\Release\Roblox Optimizer.exe.config
+C:\Users\User\source\repos\roblox-optimizer\bin\Release\Roblox Optimizer.pdb
