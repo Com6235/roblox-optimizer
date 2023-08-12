@@ -8,11 +8,11 @@
 
   <Identity
     Name="1a17a7db-c14b-456b-96a3-714a77c54f93"
-    Publisher="CN=User"
+    Publisher="CN=Com6235"
     Version="1.4.0.0" />
 
   <Properties>
-    <DisplayName>Setup</DisplayName>
+    <DisplayName>Roblox Optimizer</DisplayName>
     <PublisherDisplayName>Com6235</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -33,10 +33,12 @@
       <uap:VisualElements
         DisplayName="Roblox Optimizer"
         Description="Setup"
-        BackgroundColor="transparent"
-        Square150x150Logo="Images\Square150x150Logo.png"
-        Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile  Wide310x150Logo="Images\Wide310x150Logo.png" ShortName="Roblox Optimizer">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
         <uap:SplashScreen Image="Images\SplashScreen.png" />
         <uap:InitialRotationPreference>
           <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>

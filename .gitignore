@@ -8,6 +8,14 @@
 
 *.user
 
+*.cache
+
+.pfx
+
 /Setup/bin
 
 /Setup/obj
+
+/Setup/AppPackages
+
+/Setup/BundleArtifacts
