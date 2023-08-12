@@ -10,7 +10,7 @@
 
 *.cache
 
-.pfx
+*.pfx
 
 /Setup/bin
 
